@@ -1,31 +1,31 @@
 package cn.qdu.edu.RentBusiness;
 
 public abstract class Moto {
-	private String MotoNo;
-	private double fee;
-
-//	public Moto(String MotoNo) {
-//		this.MotoNo = MotoNo;
-//	}
-
-	public double rentFee(int day) {
-		return day * fee;
+	private String motoNum;
+	private int feePer;
+	
+	//¼ÆËã×â½ð
+	public int rentFee(int day){
+		return feePer*day;
 	}
 
-	public String getMotoNo() {
-		return MotoNo;
+	public String getMotoNum() {
+		return motoNum;
 	}
 
-	public void setMotoNo(String motoNo) {
-		MotoNo = motoNo;
+	public int getFeePer() {
+		return feePer;
 	}
 
-	public double getFee() {
-		return fee;
+	public void setMotoNum(String motoNum) {
+		this.motoNum = motoNum;
 	}
 
-	public void setFee(double fee) {
-		this.fee = fee;
+	public void setFeePer(int feePer) {
+		this.feePer = feePer;
 	}
 
+	
+	
+	
 }
